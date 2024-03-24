@@ -11,9 +11,9 @@ public class BigOExamples {
         for (int i = 0; i < 100; i++) {
             arr1.add(i);
         }
-      //logComplexity(n);
+      logComplexity(n);
         int[] array={1,2,3,4,5,6,7,8,9,10,11,12};
-        System.out.println(binarySearchIterative(array, 12));
+        System.out.println(binarySearchIterative(array, 3));
 
     }
    // Big -O Constant Time ==> constant means you don't have any time complexity
@@ -65,6 +65,7 @@ public class BigOExamples {
     }
 
     public static int binarySearchIterative(int[] array, int data){
+        //assume ordered Array and we search for specific data middle or not
         int left=0;
         int right= array.length-1;
         int operations=0;

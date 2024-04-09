@@ -1,5 +1,7 @@
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class MapReview {
     public static void main(String[] args) {
@@ -11,6 +13,11 @@ public class MapReview {
         String st = "Java Developer";
 
         System.out.println(findFirstNonRepeating(st));
+        //How to get values stored in the map in a asc sorted order?
+        //List<String> list=studentsMap.values().stream().sorted((o1, o2)-> o1.compareToIgnoreCase(o2))
+        //  .collect(Collectors.toList());
+        List<String> list=studentsMap.values().stream().sorted(String::compareToIgnoreCase)
+                .toList();
 
     }
 

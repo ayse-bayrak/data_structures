@@ -32,6 +32,7 @@ public class Assignment1_TwoSumOptimal {
         // Complexity of the solution is O(n) but I have space complexity of O(n)
       // because we create hashmap
         Map<Integer,Integer> map=new HashMap<>();// 0 1 2 3
+
         for (int i = 0; i <array.length ; i++) { //{3,2,7,9,11};
             int potentialMatch=targetValue-array[i]; //i=0==> 9-3 = 6 ... i=1==> 9-2= 7
             if (map.containsKey(potentialMatch))

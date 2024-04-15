@@ -6,7 +6,6 @@ import java.util.stream.Collectors;
 public class MapReview {
     public static void main(String[] args) {
         //create hash map
-
         Map<Integer,String> studentsMap = new HashMap<>();
         studentsMap.put(1, "Jack");
         studentsMap.put(2, "Julia");
@@ -23,7 +22,7 @@ public class MapReview {
 
     public static Character findFirstNonRepeating(String string){
 
-        //create a map: this will cost me space complexity (because ther is not my structure in the beginning)
+        //create a map: this will cost me space complexity (because there is not it in my structure in the beginning)
         Map<Character, Integer> map = new HashMap<>();
         int count = 0;
        // string = string.trim(); trim() does not remove spaces between words

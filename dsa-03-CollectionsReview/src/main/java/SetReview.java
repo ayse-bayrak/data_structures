@@ -27,7 +27,8 @@ public class SetReview {
         // iterate over the char array and add chars into HashSet
 
         // This
-        for(Character ch:str.toCharArray()) if(!set1.add(ch)) return ch;
+        for(Character ch:str.toCharArray())
+            if(!set1.add(ch)) return ch;
         // if add ops is false return that char
         return null;
     }

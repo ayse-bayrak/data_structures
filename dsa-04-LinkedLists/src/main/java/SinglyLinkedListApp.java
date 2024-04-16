@@ -19,15 +19,15 @@ public class SinglyLinkedListApp {
         System.out.println(myCharList.indexOf('y'));
 
 
-//        MySinglyLinkedList mylist2=new MySinglyLinkedList();
-//        mylist1.add(1);mylist1.add(3);  mylist1.add(6);mylist1.add(7);
-//        mylist2.add(2);mylist2.add(4);  mylist2.add(5);
-//      Node newHead= MergeTwoLinkedList.mergeLinkedLists(mylist1.head,mylist2.head);
-//
-//      while (newHead!=null){
-//          System.out.println(newHead.id);
-//          newHead=newHead.next;
-//      }
+        MySinglyLinkedList mylist2=new MySinglyLinkedList();
+        mylist1.add(1);mylist1.add(3);  mylist1.add(6);mylist1.add(7);
+        mylist2.add(2);mylist2.add(4);  mylist2.add(5);
+      Node newHead= MergeTwoLinkedList.mergeLinkedLists(mylist1.head,mylist2.head);
+
+      while (newHead!=null){
+          System.out.println(newHead.id);
+          newHead=newHead.next;
+      }
 
 
 

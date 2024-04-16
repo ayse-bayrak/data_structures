@@ -10,11 +10,11 @@ public class MySinglyLinkedList {
     }
 
   void addFirst(int data){
-      // create a new node object from data
+// create a new node object from data
       Node node=new Node(data);
-     // case 1: list empty
+      // case 1: list empty
       if(isEmpty()){
-       head=tail=node;
+          head=tail=node;
       } else{// case 2 : list is not empty
           node.next=head;
           head=node;
@@ -150,8 +150,6 @@ public class MySinglyLinkedList {
         }
     return -1;
     }
-
-
 
     void printNodes(){
         Node current=head;

@@ -1,3 +1,5 @@
+import CustomSinglyLinkedList.Node;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -23,6 +25,8 @@ public class TwoPointerSlowFast {
         List<Integer> list6 = List.of(2, 4, 6, 8, 10); // Initialize with elements
         System.out.println(getKthElement1(list6, 2));
     }
+
+
     public static Integer getKthElement(List<Integer> list, int k) {
         int slow=0;
         int fast = list.size();

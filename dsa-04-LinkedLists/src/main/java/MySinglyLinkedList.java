@@ -87,37 +87,38 @@ public class MySinglyLinkedList {
 
     }
     void deleteById(int id){
-        // check if empty
-        if(isEmpty()) System.out.println("List is empty!!!");
-        // assign prev and current with the head
+        // check if empty, I am going to check if the list is empty
+        if(isEmpty()) System.out.println("List is empty!!");
+        //assign prev and current with head
 
-        Node prev=head;
-        Node current=head;
+        Node prev= head;
+        Node current =head;
         while(current!=null){
-            if(current.id==id){// there is a match
-                //case 1: head
-                if(current==head){
-                    head=current.next;
+            if(current.id==id){ //if there is match
+                //case 1 : head
+                if(current==head) {
+                    head= current.next;
                     current.next=null;
                 }
-                // case 2 : tail
-                else if(current==tail){
-                    tail=prev;
-                    prev.next=null;//Ex -Tail will be eligible for Garbage Collection
+                //case 2 : tail
+                else if (current==tail) {
+                tail=prev;
+                prev.next=null; // Ex-Tail will be eligible for garbage collection
+                    //because there is no one pointing to the ex-tail right now.
                 }
-                // case 3 : middle
+                //case 3 : middle
                 else{
                     prev.next=current.next;
-                    current.next=null;// Current will be eligible for Garbage Collection
+                    current.next=null; //Current will be eligible for Garbage Collection
                 }
-                // after deletion
+                //after deletion
                 size--;
             }
             // move forward on the elements of the list
             prev=current;
             current=current.next;
-
         }
+
 
     }
     int indexOf(int id){

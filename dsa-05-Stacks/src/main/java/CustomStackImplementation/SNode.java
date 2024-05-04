@@ -1,3 +1,5 @@
+package CustomStackImplementation;
+
 public class SNode <T> {
 
 public T value;

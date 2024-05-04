@@ -1,5 +1,3 @@
-import CustomSinglyLinkedList.Node;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -14,7 +12,8 @@ public class TwoPointerSlowFast {
         List<Integer> list1 = new ArrayList<>(); // Initialize an empty ArrayList
         List<String> list2 = new ArrayList<>(Arrays.asList("apple", "banana", "orange")); // Initialize with elements
         List<Integer> list11 = Arrays.asList(1,2,3,4,5,6,7);
-                //Using LinkedList:
+
+        //Using LinkedList:
         List<Integer> list3 = new LinkedList<>(); // Initialize an empty LinkedList
         List<String> list4 = new LinkedList<>(Arrays.asList("apple", "banana", "orange")); // Initialize with elements
 

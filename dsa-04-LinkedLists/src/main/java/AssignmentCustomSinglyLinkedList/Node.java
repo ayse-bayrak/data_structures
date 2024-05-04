@@ -1,4 +1,4 @@
-package CustomSinglyLinkedList;
+package AssignmentCustomSinglyLinkedList;
 
 public class Node {
     int value;

@@ -1,4 +1,4 @@
-package CustomSinglyLinkedList;
+package AssignmentCustomSinglyLinkedList;
 
 public class MySinglyLinkedListAssignment {
     Node head;
@@ -10,7 +10,7 @@ public class MySinglyLinkedListAssignment {
     }
 
     void addFirst(int value){
-        Node newNode= new Node(value);
+        Node newNode= new Node(value); // to new adding value, we insert new node at the beginning
         if (isEmpty()) {
             head=tail=newNode;
         } else {
@@ -19,6 +19,8 @@ public class MySinglyLinkedListAssignment {
         }
         size++;
     }
+
+
     // Add new elements after Tail
     void add(int value){
         //new node with this value
@@ -100,7 +102,8 @@ public class MySinglyLinkedListAssignment {
         }
     }
 
-    public int getKthFromLast(int k){
+    public int getKthFromLast(int k){ //Assignment2-Interview Question-one pass-one ass mean either two pointer or HasMah/HashSet
+        // we don't know the size in this case
         //create two pointers
         Node slow=head;
         Node fast=head;
@@ -108,7 +111,7 @@ public class MySinglyLinkedListAssignment {
         //move fast k-1 time
         for (int i = 0; i < k; i++) {
             fast=fast.next;
-        }
+        } // bring to fast pointer k-1 node sequence
         //move both pointer until fast hits the last element
         while (fast!=null) {
                 fast=fast.next;
@@ -136,41 +139,62 @@ public class MySinglyLinkedListAssignment {
         return ptr1.value;
     }
     public void removeKthFromLast(int k){
-        //create two pointers
-        Node slow=head;
-        Node fast=head;
+        //create three pointers
+        Node ptr1=head;
+        Node ptr2=head;
         Node prev=null;
 
-        //move fast k-1 time
+        //move ptr2 k-1 time
         for (int i = 0; i < k; i++) {
-            fast=fast.next;
+            ptr2=ptr2.next;
         }
-        //move both pointer until fast hits the last element
-        while (fast!=null) {
-            prev=slow;
-            fast=fast.next;
-            slow=slow.next;
-        }
-        // ptr1 is on the kth element from the last
+        //move both pointer until ptr2 hits the last element
+        while (ptr2!=null) {
+            prev=ptr1;
+            ptr1=ptr1.next;
+            ptr2=ptr2.next;
+        }// ptr1 is on the kth element from the last
 
-        // we find KthElementFromLast ==>slow
 
+        // we find KthElementFromLast ==>ptr1 and we know prev
+        //Do delete operation
         //three case
-        if (slow==head) {
-            head=slow.next;
-            slow.next=null;
+        if (ptr1==head) {
+            head=ptr1.next;
+            ptr1.next=null;
             size--;
-        }else if (slow==tail){
-            tail=prev;
+        }else if (ptr1==tail){
+            tail=prev;// new tail is prev
             prev.next=null;
           size--;
         }else {
-            prev.next=slow.next;
-            slow.next=null;
+            prev.next=ptr1.next;
+            ptr1.next=null;
             size--;
         }
+    }// I should be careful, deletion operation always tricky in on the linkedList
+
+    public void removeKthFromLast2(int k){
+        Node ptr1=head;
+        Node ptr2=head;
+
+        for(int i=0;i<k-1;i++) {
+            ptr2=ptr2.next;
+            if (ptr2==null)  System.out.println("Less than k elements");
+            else if(ptr2.next==null){
+                head=ptr1.next;
+                ptr1.next=null;
+                return;
+            }
+        }
+        while(ptr2.next.next!=null) {
+            ptr1=ptr1.next;
+            ptr2=ptr2.next;
+        }
+        ptr1.next=ptr1.next.next;
+        ptr1=ptr1.next;
+        ptr1=null;
 
     }
-
 }
 

@@ -102,7 +102,7 @@ public class MySinglyLinkedListAssignment {
         }
     }
 
-    public int getKthFromLast(int k){ //Assignment2-Interview Question-one pass-one ass mean either two pointer or HasMah/HashSet
+    public int getKthFromLast(int k){ //Assignment2-Interview Question-one pass-one ass mean either two pointer or HasMap/HashSet
         // we don't know the size in this case
         //create two pointers
         Node slow=head;

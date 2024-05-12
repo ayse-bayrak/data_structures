@@ -40,11 +40,8 @@ public class Student {
     public int hashCode() {
         return Objects.hash(id, name);
     }
-
     // if I implement the equals, I always implement the hashcode, this is golden rule,
     //Why?
-
-
 
     @Override
     public String toString() {

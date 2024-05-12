@@ -6,7 +6,7 @@ public class MyArrayListTest {
     public static void main(String[] args) {
         int[] array=new int[10];
         int a= array.length;
-        //we have array length, don't have the size. because in theb array you occupy the length
+        //we have array length, don't have the size. because in the array you occupy the length
         //it does not matter if you have some elements empty and some elements are occupied with data
 
         ArrayList<Integer> b=new ArrayList<>();

@@ -12,7 +12,7 @@ public class LinkedListDemo {
         Node node3 = new Node(3);
         Node node4 = new Node(4);
         System.out.println(node1.next);//null
-        // Next field will be null for unassigned reference types, it si not pointing the anything now
+        // Next field will be null for unassigned reference types, it is not pointing the anything now
 
         //3-Link node objects
         node1.next = node2;

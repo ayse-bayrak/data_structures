@@ -14,7 +14,6 @@ public class BigOExamples {
       logComplexity(n);
         int[] array={1,2,3,4,5,6,7,8,9,10,11,12};
         System.out.println(binarySearchIterative(array, 3));
-
     }
    // Big -O Constant Time ==> constant means you don't have any time complexity
     public static void find0(int dataSize){ // it does not any relationship size of the data

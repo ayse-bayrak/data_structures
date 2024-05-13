@@ -1,3 +1,5 @@
+package AlgorithmProblemWithStack;
+
 import CustomStackImplementation.MyStack;
 
 public class ExprBalanceCheck {
@@ -16,8 +18,9 @@ public class ExprBalanceCheck {
         MyStack<Character> myStack= new MyStack<>();
         //iterate over expr
         for (int i = 0; i < expr.length(); i++) {
-            Character ch = expr.charAt(i);
-            //filter non player chars
+            Character ch = expr.charAt(i); //Expression = (A+B)- ((C*D)/ [F*(B/2)])
+            //filter non player chars, ignore the letters
+            //Algorithm will handle only: A[i]= () (() [()])
             if(ch!='('&&ch!='['&&ch!='{'&&ch!=')'&&ch!=']'&&ch!='}') continue;
             // if it is a symbol to be processed
             //if opening symbol
@@ -47,7 +50,7 @@ public class ExprBalanceCheck {
         return myStack.isEmpty();
     }
 
-    public static boolean balanceCheckMine(String expr) {
+    public static boolean balanceCheckMine(String expr) {  // it does not properly
         //create a stack
         int o1=0,o2=0,o3=0, o11=0,o22=0,o33=0;
         for (int i = 0; i < expr.length(); i++) {

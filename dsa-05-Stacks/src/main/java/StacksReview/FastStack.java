@@ -5,7 +5,7 @@ public class FastStack <T>{
 
     public FastStack() {
         this.list = new MySinglyLinkedList<>();
-    }
+    } // therefore I made an adaptor, (pattern) I have adopted my stack
 
     int size(){
         return list.size;

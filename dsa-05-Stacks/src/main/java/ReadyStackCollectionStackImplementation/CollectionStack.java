@@ -1,4 +1,4 @@
-package CollectionStackImplementation;
+package ReadyStackCollectionStackImplementation;
 
 import java.util.Deque;
 import java.util.LinkedList;
@@ -17,7 +17,7 @@ public class CollectionStack {
         // if you need a Stack structure please go with the Collections
 
         Stack<Integer> s = new Stack<>();
-        //but in development enviroment deque is very common very usefull
+        //but in development environment deque is very common very usefully
 
 
     }

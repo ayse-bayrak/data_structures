@@ -1,6 +1,6 @@
 package StacksReview;
 
-public class MySinglyLinkedList<T> {
+public class MySinglyLinkedList<T> { // I have a Generic LinkListClass
     Node<T> head;
     Node<T> tail;
     int size;
@@ -21,7 +21,7 @@ public class MySinglyLinkedList<T> {
         }
         // case 2: more than 1 element
         else {
-            result = head.value;
+            result = head.value; // new head is the next element now
             head = head.next;
         }
         size--;

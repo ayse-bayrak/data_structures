@@ -1,4 +1,4 @@
-package Assignment;
+package AlgorithmProblemWithStack.Assignment;
 
 import CustomStackImplementation.MyStack;
 

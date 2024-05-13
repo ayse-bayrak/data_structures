@@ -4,13 +4,13 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 public class BrowserHistory {
-    // declare stacks and current
+    // declare 2 stacks and current
     Deque<String> history, forwardStack;
     String currentPage;
 
     public BrowserHistory(String homepage) {
         // initialize stacks and current=homepage
-        history=new ArrayDeque<>();
+        history=new ArrayDeque<>(); // ArrayDeque is one of the implementation of Deque
         forwardStack = new ArrayDeque<>();
         currentPage=homepage;
     }
@@ -21,7 +21,7 @@ public class BrowserHistory {
         currentPage=url;
         System.out.println(url + " is visited" );
 
-        forwardStack=new ArrayDeque<>();// for clear forward
+        forwardStack=new ArrayDeque<>();// I need to assign new  forward step, clear forward
 
     }
 

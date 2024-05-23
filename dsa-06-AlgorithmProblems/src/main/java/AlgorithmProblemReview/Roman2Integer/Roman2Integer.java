@@ -26,7 +26,7 @@ public class Roman2Integer {
         int index =0;
         // while loop until index reaches end of string
         while (index<s.length()) {
-            String currentSymbol=s.substring(index,index+1);
+            String currentSymbol=s.substring(index,index+1); // this is other pattern
             int currentValue = values.get(currentSymbol);
             int nextValue=0;
             if(index+1<s.length()) {

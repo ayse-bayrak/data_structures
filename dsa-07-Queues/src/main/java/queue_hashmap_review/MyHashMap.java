@@ -6,6 +6,7 @@ import java.util.List;
 public class MyHashMap {
 List<BucketLinkedList> list;
 public int modNumber;
+
     public MyHashMap() {
     this.modNumber=2003;
     this.list= new ArrayList<BucketLinkedList>();

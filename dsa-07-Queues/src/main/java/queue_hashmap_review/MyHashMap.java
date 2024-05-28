@@ -8,9 +8,9 @@ List<BucketLinkedList> list;
 public int modNumber;
 
     public MyHashMap() {
-    this.modNumber=2003;
+    this.modNumber=5;
     this.list= new ArrayList<BucketLinkedList>();
-        for (int i = 0; i < 2003; i++) {
+        for (int i = 0; i < 5; i++) {
             this.list.add(new BucketLinkedList());
         }
     }

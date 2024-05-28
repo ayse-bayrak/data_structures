@@ -23,7 +23,7 @@ public class MyQueue <T>{
     }
 
     T dequeue() {
-        QNode<T> frontNode;
+        QNode<T> frontNode;//capture the deleting node, need to return value of removing Node
         if (isEmpty()) throw new NoSuchElementException();
         if (front==back) { // one element in the queue
             frontNode = front;

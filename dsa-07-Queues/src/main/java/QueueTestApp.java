@@ -4,9 +4,9 @@ public class QueueTestApp {
         mq.enqueue(1);
         mq.enqueue(2);
         mq.enqueue(3);
-        System.out.println("Size of queue is : "+mq.size());
-        System.out.println("Front  is : "+mq.peek());
-        System.out.println("First remove from queue : "+mq.dequeue());
-        System.out.println("Front  is : "+mq.peek());
+        System.out.println("Size of queue is : "+mq.size());//3
+        System.out.println("Front  is : "+mq.peek());//1
+        System.out.println("First remove from queue : "+mq.dequeue());//1
+        System.out.println("Front  is : "+mq.peek());//2
     }
 }

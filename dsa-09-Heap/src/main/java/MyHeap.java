@@ -8,6 +8,14 @@ public class MyHeap {
         this.items = new int[capacity];
         this.size=0;
     }
+
+    public MyHeap(int[] arr) {
+        this.items = new int[arr.length];
+        size=arr.length;
+        this.items=arr;
+        buildHeap();
+    }
+
     // we have some formula
     public int peek() {
         if (size==0) throw new NoSuchElementException();
@@ -93,5 +101,22 @@ public class MyHeap {
             System.out.print(items[i]+ ", ");
         }
         System.out.println();
+    }
+
+    public void buildHeap(){
+        int startIndex = (size/2)-1;
+        for (int i = startIndex; i >=0 ; i--) {
+            heapify(i);
+        }
+    }
+
+    private void heapify(int index) {
+        // check if the index element is a valid parent
+        if (!isValidParent(index)) {
+            int largestChildIndex = largerChildIndex(index);
+            swap(index, largestChildIndex);
+            heapify(largestChildIndex);
+        }
+
     }
 }

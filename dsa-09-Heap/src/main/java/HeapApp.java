@@ -19,7 +19,7 @@ public class HeapApp {
 //        heap.printHeap();
 //        heap.remove();
 //        heap.printHeap();
-        int[] numbers={1,2,5,6,8,21,0};
+        int[] numbers={1,2,13,5,35,6,8,21,0};
         MyHeap heap=new MyHeap(numbers);
         heap.printHeap();
 

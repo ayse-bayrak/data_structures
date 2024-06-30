@@ -102,7 +102,7 @@ public class MyHeap {
         }
         System.out.println();
     }
-
+// heapify part is added in review-->
     public void buildHeap(){
         int startIndex = (size/2)-1;
         for (int i = startIndex; i >=0 ; i--) {

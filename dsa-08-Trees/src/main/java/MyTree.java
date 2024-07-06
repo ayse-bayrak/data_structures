@@ -17,16 +17,14 @@ public class MyTree {
     TNode current=root;
     while (true) {
         if (value<current.value) { // go to left part
-            if (current.leftChild==null) {
-                //if left is null insert there!!
+            if (current.leftChild==null) { //if left is null insert there!!
                 current.leftChild=newNode;
                 break;
             }
             // if left is not null branch into left subtree!!!
             current=current.leftChild;
         } else { // go to right part
-            if (current.rightChild==null) {
-                //if right is null insert there!!
+            if (current.rightChild==null) { //if right is null insert there!!
                 current.rightChild=newNode;
                 break;
             }
@@ -45,7 +43,7 @@ public class MyTree {
 
     //Root L R
     void preOrderTraversal(TNode root) {
-        if(root==null) return; // termination-base condition
+        if(root==null) return; // termination-base condition, it must be base condition in recursion
         System.out.print(root.value+", "); // visit root
         preOrderTraversal(root.leftChild); // visit left subtree
         preOrderTraversal(root.rightChild); // visit right subtree

@@ -11,11 +11,13 @@ public class JumpSearch {
         int blockSize=(int)Math.sqrt(array.length);
         int start=0;
         int next=blockSize; // 3
+        // to skip the unnecessary blocks or find related blocks
         while (start< array.length && array[next-1]<data){
             start=next;
             next+=blockSize;
             if (next> array.length) next= array.length;
         }
+        //make a linear search in the block
         for (int i = start; i <next ; i++) {
            if (array[i]==data) return i;
         }

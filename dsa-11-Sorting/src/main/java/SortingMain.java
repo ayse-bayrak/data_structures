@@ -5,9 +5,9 @@ public class SortingMain {
         int[] numbers= {7,2,4,6,1,9,-1};
         //System.out.println(Arrays.toString(BubbleSort.bubbleSort(numbers)));//[-1, 1, 2, 4, 6, 7, 9]
         //System.out.println(Arrays.toString(SelectionSort.selectionSort(numbers)));//[-1, 1, 2, 4, 6, 7, 9]
-        System.out.println(Arrays.toString(InsertionSort.insertionSort(numbers)));//[-1, 1, 2, 4, 6, 7, 9]
+        //System.out.println(Arrays.toString(InsertionSort.insertionSort(numbers)));//[-1, 1, 2, 4, 6, 7, 9]
         // JD1MergeSort.mergeSort(numbers);
-//        JD1QuickSort.qSort(numbers, 0, numbers.length-1);
+        JD1QuickSort.qSort(numbers, 0, numbers.length-1);
 //        System.out.println(Arrays.toString(numbers));
 
     }

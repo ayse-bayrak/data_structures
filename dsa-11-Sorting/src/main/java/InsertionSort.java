@@ -5,7 +5,8 @@ public class InsertionSort {
             int toBeInserted=array[i]; // temp var toBeInserted
             int j=i-1;// this is predecessor
             // start shifting operation here
-            while(j>=0 && toBeInserted<array[j]){  // this is a pattern for shifthing you can use different algorithm, you keep the temporary one index and others shifting
+            while(j>=0 && toBeInserted<array[j]){  // this is a pattern for shifting you can use different algorithm,
+                // you keep the temporary one index and others shifting
                 array[j+1]=array[j];
                 j--;
             }

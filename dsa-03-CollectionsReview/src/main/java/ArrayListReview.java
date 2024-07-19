@@ -18,12 +18,11 @@ public class ArrayListReview {
         students.add(new Student(4, "Mary"));
 
         // Iteration on ArrayList
-        //1. For Loop with get(index)
+        //1. For Loop or any other loop (do, while) with get(index)
         System.out.println("Printing with legacy for-loop..........");
         for (int i = 0; i < students.size() ; i++) {
             System.out.println(students.get(i));
         }
-
         //2. Iterator
         //Forward Iteration
         System.out.println("Printing with iterator..........");
@@ -44,7 +43,7 @@ public class ArrayListReview {
             System.out.println(student);
         }
 
-        //4. Lambda
+        //4. Lambda -> forEach method
         System.out.println("Printing Backwards with lambda");
         students.forEach(student -> System.out.println(student));
 

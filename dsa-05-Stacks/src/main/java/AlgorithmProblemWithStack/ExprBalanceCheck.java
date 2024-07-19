@@ -32,6 +32,10 @@ public class ExprBalanceCheck {
             // stack shouldn't be empty
             if (myStack.isEmpty()) return false;
             //I need to check if they match or not
+
+            if (ch=='('|| ch=='['||ch=='{') {
+
+            }
             switch (ch) {
                 case ')':
                     if (myStack.pop()!='(') return false;
@@ -45,7 +49,6 @@ public class ExprBalanceCheck {
             }
         } // end of for
         //return if stack is empty
-
 
         return myStack.isEmpty();
     }

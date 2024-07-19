@@ -9,8 +9,8 @@ public class MySinglyLinkedList {
         return head == null;
     }
 
-  void addFirst(int data){
-// create a new node object from data
+  void addFirst(int data){ // to the first
+  // create a new node object from data
       Node node=new Node(data);
       // case 1: list empty
       if(isEmpty()){
@@ -72,7 +72,7 @@ public class MySinglyLinkedList {
 
         }
     }
-    void add(int data) {
+    void add(int data) {  // to the end
         // create a new node object from data
         Node node = new Node(data);
 
@@ -133,23 +133,6 @@ public class MySinglyLinkedList {
         }
         return -1;
     }
-    int indexOf(char id){ // this is mine method
-        if (isEmpty()) return -1;
-
-        Node prev= head;
-        Node current = head;
-        int index=0;
-
-        while (current!=null){
-            if (current.id==id) {
-                return index;
-            }
-            index++;
-            prev=current;
-            current=current.next;
-        }
-    return -1;
-    }
 
     void printNodes(){
         Node current=head;
@@ -161,7 +144,6 @@ public class MySinglyLinkedList {
             current=current.next;
         }
   }
-
 
     public void removeKthFromLast2(int k){
         Node ptr1=head;

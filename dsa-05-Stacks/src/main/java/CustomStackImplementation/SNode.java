@@ -9,4 +9,4 @@ SNode next;
         this.value = value;
     }
 
-}// I have a data and i have another address value
+} // I have a data and i have another address value

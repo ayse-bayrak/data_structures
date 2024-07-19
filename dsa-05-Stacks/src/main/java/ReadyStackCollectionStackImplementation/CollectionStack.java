@@ -17,7 +17,7 @@ public class CollectionStack {
         // if you need a Stack structure please go with the Collections
 
         Stack<Integer> s = new Stack<>();
-        //but in development environment deque is very common very usefully
+        //you can use like this, but in development environment deque is very common very usefully
 
 
     }

@@ -35,19 +35,19 @@ public class FirstSolution {
 
     class Solution {
         public static ListNode reverseList(ListNode head) {
-            ListNode current=head.next;
-            ListNode prev=head;
-            ListNode tail=head;
+            ListNode current = head.next;
+            ListNode prev = head;
+            ListNode tail = head;
 
-            while (current!=null){
-                ListNode nextNode=current.next;
-                current.next=prev;
-                prev=current;
-                current=nextNode;
+            while (current != null) {
+                ListNode nextNode = current.next;
+                current.next = prev;
+                prev = current;
+                current = nextNode;
             }
-            head=prev;
-            tail.next=null;
-           return head;
+            head = prev;
+            tail.next = null;
+            return head;
         }
     }
 }

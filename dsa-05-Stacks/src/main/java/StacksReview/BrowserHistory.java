@@ -47,5 +47,6 @@ public class BrowserHistory {
         return currentPage;
 
     }
+    // there is another solution in interview preparation with DLL
 
 }

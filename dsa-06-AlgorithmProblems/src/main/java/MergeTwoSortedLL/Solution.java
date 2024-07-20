@@ -21,6 +21,5 @@ public class Solution {
         if(curr1==null) prev.next=curr2;
         else prev.next=curr1;
         return tempHead.next;
-
     }
 }

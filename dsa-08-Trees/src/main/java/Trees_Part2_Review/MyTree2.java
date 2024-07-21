@@ -121,7 +121,7 @@ public class MyTree2 {
         // each step add value to sum variable
     }
 
-    //Task 4.5 : Implement a method that calculates the sum of node values
+    // Task 4.5 : Implement a method that calculates the sum of node values
     int sumOfNodes(TNode root) {
         if (root == null) return 0; // base condition
         return root.value + sumOfNodes(root.leftChild) + sumOfNodes(root.rightChild);

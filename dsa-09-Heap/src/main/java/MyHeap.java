@@ -112,7 +112,7 @@ public class MyHeap {
 
     private void heapify(int index) {
         // check if the index element is a valid parent
-        if (!isValidParent(index)) {
+        if (!isValidParent(index) ) {
             int largestChildIndex = largerChildIndex(index);
             swap(index, largestChildIndex);
             heapify(largestChildIndex);

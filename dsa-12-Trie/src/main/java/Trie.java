@@ -1,9 +1,12 @@
+import java.util.HashMap;
+import java.util.Map;
+
 public class Trie {
 
     // like every tree I need a root. this root should be trie
     TrieNode root;
 
-    // Construct an eempty Trie Object
+    // Construct an empty Trie Object
     public Trie() {
     root= new TrieNode();
     }
@@ -35,10 +38,13 @@ public class Trie {
         TrieNode curNode = root;
         for (char c : prefix.toCharArray()) {
             if(!curNode.children.containsKey(c)) return false;
-
             curNode=curNode.children.get(c);// move to next node/child, how can I move forward, with this
         }
         return true;
     }
+    class TrieNode {
 
+        public Map<Character, TrieNode> children = new HashMap<>();
+        public boolean isWord = false; // this means that if I am iterating over the trie
+    }
 }

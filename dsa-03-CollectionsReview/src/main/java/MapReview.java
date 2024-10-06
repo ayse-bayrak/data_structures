@@ -29,11 +29,12 @@ public class MapReview {
        // string = string.trim(); trim() does not remove spaces between words
         string = string.replace(" ", "");
         for (Character ch :string.toCharArray()) {
-            if(map.containsKey(ch)) {
-                map.put(ch, count+1);
-            } else {
-                map.put(ch,1); // this is the first time i see the character
-            }
+            map.put(ch, map.getOrDefault(ch, 0) + 1);
+//            if(map.containsKey(ch)) {
+//                map.put(ch, count+1);
+//            } else {
+//                map.put(ch,1); // this is the first time i see the character
+//            }
         }
 
         // start from the beginning and check if there is a char with frequency 1

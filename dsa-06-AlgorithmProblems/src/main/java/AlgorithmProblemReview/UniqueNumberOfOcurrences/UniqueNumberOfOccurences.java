@@ -14,8 +14,8 @@ public class UniqueNumberOfOccurences {
         public static boolean uniqueOccurrences(int[] arr){
             // create a hashmap (Integer,Integer) (Elements, Freq.)
             Map<Integer, Integer> freq = new HashMap<>();
-            // count number of occurences and put them in map
-            //count frequencies pattern, keep in mind
+            // count number of occurrences and put them in map
+            // count frequencies pattern, keep in mind
             for (int i : arr) {
                 freq.put(i, freq.getOrDefault(i, 0)+1);
             }

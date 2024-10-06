@@ -1,5 +1,7 @@
 package Day_01_Review;
 
+import java.util.Arrays;
+
 public class Test {
     public static void main(String[] args) {
        // new X(1) it is an object without reference
@@ -12,6 +14,7 @@ public class Test {
         int[] scoreArray=new int[10];
         System.out.println(scoreArray); //[I@28a418fc  // it will type the beginning of the address
         // This is the address of index ) in java programming language
+        System.out.println(Arrays.toString(scoreArray)); //[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
     }
 }

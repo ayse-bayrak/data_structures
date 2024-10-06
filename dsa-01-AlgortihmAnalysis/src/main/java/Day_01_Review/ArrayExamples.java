@@ -7,9 +7,9 @@ public class ArrayExamples {
     public static void main(String[] args) {
         int[] array1= {2,4,6};
         int[] array2={1,3,5};
-        System.out.println(Arrays.toString(array1));
+        System.out.println(Arrays.toString(array1));//[2, 4, 6]
         array1=array2;
-        System.out.println(Arrays.toString(array1));
-        ArrayList<Integer> a=new ArrayList<>();
+        System.out.println(Arrays.toString(array1));//[1, 3, 5]
+        ArrayList<Integer> a = new ArrayList<>();
     }
 }

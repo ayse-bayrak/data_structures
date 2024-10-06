@@ -21,7 +21,7 @@ public class SunsetViews {
         for (int i = 0; i < buildings.length; i++) {
             int value = buildings[i]; //3
             int temp=0;// to keep `the highest length` after the i
-            int value2;
+            int value2; // to keep high of each i
             for (int j = i+1; j < buildings.length; j++) {
                     value2 = buildings[j];
                 if (value2>temp) temp=value2;
